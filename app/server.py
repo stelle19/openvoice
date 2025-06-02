@@ -31,7 +31,3 @@ async def read_root():
 if __name__ == "__main__":
     uvicorn.run("server:app", host="0.0.0.0", port=8000, reload=True)
     
-    
-# curl -X POST "http://localhost:8000/synthesize/" \
-#   -F "reference=@/home/stelle94/conda_folder/OpenVoice_cp/resources/Trumpvoice.mp3" \
-#   --output result.wav
